@@ -1626,7 +1626,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2.1, classnames@^2.2.5:
+classnames@^2.2.5:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
@@ -4089,7 +4089,7 @@ mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0:
   dependencies:
     minimist "0.0.8"
 
-moment@^2.13.0, moment@^2.24.0:
+moment@^2.24.0:
   version "2.24.0"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
   integrity sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
@@ -4728,6 +4728,11 @@ pkg-dir@^3.0.0:
   integrity sha512-/E57AYkoeQ25qkxMj5PBOVgF8Kiu/h7cYS30Z5+R7WaiCCBfLq58ZI/dSeaEKb9WVJV5n/03QwrN3IeWIFllvw==
   dependencies:
     find-up "^3.0.0"
+
+popper.js@^1.12.5:
+  version "1.16.1"
+  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
+  integrity sha512-Wb4p1J4zyFTbM+u6WuO4XstYx4Ky9Cewe4DWrel7B0w6VVICvPwdOpotjzcf6eD8TsckVnIMNONQyPIUFOUbCQ==
 
 portfinder@^1.0.20:
   version "1.0.21"
@@ -5435,15 +5440,15 @@ react-date-picker@^6.13.0:
     react-calendar "^2.17.4"
     react-lifecycles-compat "^3.0.4"
 
-react-datepicker@^0.29.0:
-  version "0.29.0"
-  resolved "https://registry.yarnpkg.com/react-datepicker/-/react-datepicker-0.29.0.tgz#cb6d7f65943dab5e6309bc9847e186a28a973463"
-  integrity sha1-y21/ZZQ9q15jCbyYR+GGooqXNGM=
+react-datepicker@^0.64.0:
+  version "0.64.0"
+  resolved "https://registry.yarnpkg.com/react-datepicker/-/react-datepicker-0.64.0.tgz#b2e1a7983ddc29ad78d82d5763a174cf33e68ee0"
+  integrity sha512-0bJTdYY7GRiI1YsVA6ztJbGUEkXNDxAqEaoMbQN82swa8MQTjqJQ+DRSNZEPzQG00u7PbiyE6/uaoABYkZquXg==
   dependencies:
-    classnames "^2.2.1"
-    moment "^2.13.0"
-    react-onclickoutside "^4.8.0"
-    tether "^1.3.2"
+    classnames "^2.2.5"
+    prop-types "^15.6.0"
+    react-onclickoutside "^6.6.3"
+    react-popper "^0.7.4"
 
 react-dom-factories@^1.0.0:
   version "1.0.2"
@@ -5517,19 +5522,17 @@ react-multiselect-checkboxes@^0.1.1:
     prop-types "^15.6.2"
     react-select "^2.1.1"
 
-react-onclickoutside@^4.8.0:
-  version "4.9.0"
-  resolved "https://registry.yarnpkg.com/react-onclickoutside/-/react-onclickoutside-4.9.0.tgz#2908c3136e244102bea5e5437a838a528d5d2995"
-  integrity sha1-KQjDE24kQQK+peVDeoOKUo1dKZU=
-  dependencies:
-    object-assign "^4.0.1"
-
 react-onclickoutside@^5.11.1:
   version "5.11.1"
   resolved "https://registry.yarnpkg.com/react-onclickoutside/-/react-onclickoutside-5.11.1.tgz#00314e52567cf55faba94cabbacd119619070623"
   integrity sha1-ADFOUlZ89V+rqUyrus0RlhkHBiM=
   dependencies:
     create-react-class "^15.5.x"
+
+react-onclickoutside@^6.6.3:
+  version "6.9.0"
+  resolved "https://registry.yarnpkg.com/react-onclickoutside/-/react-onclickoutside-6.9.0.tgz#a54bc317ae8cf6131a5d78acea55a11067f37a1f"
+  integrity sha512-8ltIY3bC7oGhj2nPAvWOGi+xGFybPNhJM0V1H8hY/whNcXgmDeaeoCMPPd8VatrpTsUWjb/vGzrmu6SrXVty3A==
 
 react-overlays@^0.8.0:
   version "0.8.3"
@@ -5542,6 +5545,14 @@ react-overlays@^0.8.0:
     prop-types-extra "^1.0.1"
     react-transition-group "^2.2.0"
     warning "^3.0.0"
+
+react-popper@^0.7.4:
+  version "0.7.5"
+  resolved "https://registry.yarnpkg.com/react-popper/-/react-popper-0.7.5.tgz#71c25946f291db381231281f6b95729e8b801596"
+  integrity sha512-ya9dhhGCf74JTOB2uyksEHhIGw7w9tNZRUJF73lEq2h4H5JT6MBa4PdT4G+sx6fZwq+xKZAL/sVNAIuojPn7Dg==
+  dependencies:
+    popper.js "^1.12.5"
+    prop-types "^15.5.10"
 
 react-progressbar@^15.4.1:
   version "15.4.1"
@@ -6564,11 +6575,6 @@ terser@^4.0.0:
     commander "^2.20.0"
     source-map "~0.6.1"
     source-map-support "~0.5.12"
-
-tether@^1.3.2:
-  version "1.4.7"
-  resolved "https://registry.yarnpkg.com/tether/-/tether-1.4.7.tgz#d56a818590d8fe72e387f77a67f93ab96d8e1fb2"
-  integrity sha512-Z0J1aExjoFU8pybVkQAo/vD2wfSO63r+XOPfWQMC5qtf1bI7IWqNk4MiyBcgvvnY8kqnY06dVdvwTK2S3PU/Fw==
 
 through2@^2.0.0:
   version "2.0.5"
